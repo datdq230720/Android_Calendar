@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="7dp"
+    tools:context=".SearchActivity">
+
+    <Button
+        android:id="@+id/bt_search_from_calendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:onClick="searchFromCalendar"
+        android:background="@null"
+        android:textSize="20dp"
+        android:textColor="@color/blue"
+        android:text="Calender" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/ed_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="Nhập tên hoạt đông" />
+
+        <ImageButton
+            android:id="@+id/bt_search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:onClick="Search"
+            android:layout_weight="1"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_baseline_search_24" />
+
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/evenLV"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5"/>
+
+</LinearLayout>
